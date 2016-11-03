@@ -14,28 +14,19 @@ weight = 0
   title = "Interests"
   interests = [
     "Artificial Intelligence",
-    "Computational Linguistics",
-    "Information Retrieval"
+    "Database Management Systems",
+    "Programming Languages and Software Engineering"
   ]
 
 # List your qualifications (such as academic degrees).
-[education]
-  title = "Education"
+[Experience]
+  title = "experience"
 
-[[education.courses]]
-  course = "PhD in Artificial Intelligence"
-  institution = "Stanford University"
-  year = 2012
 
-[[education.courses]]
-  course = "MEng in Artificial Intelligence"
-  institution = "Massachusetts Institute of Technology"
-  year = 2009
-
-[[education.courses]]
-  course = "BSc in Artificial Intelligence"
-  institution = "Massachusetts Institute of Technology"
-  year = 2008
+[[experience.years]]
+  course = "BSc in Computer Science and Technology"
+  institution = "Huangshan University (China)"
+  year = 2013
  
 +++
 
