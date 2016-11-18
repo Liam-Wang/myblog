@@ -1,0 +1,595 @@
+
+
+  
+    
+  
+
+
+  
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Hugo 0.17">
+    <title>Managing content</title>
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+
+    <link rel="icon" href="/favicon.png">
+    
+
+    
+    <meta name="description" content="This is a brief guide to managing content with the Academic theme. Content can include homepage sections, publications, projects, and news/blog articles. After you have read this guide about creating and managing content, you may also be interested to learn about writing content with Markdown, LaTeX, and Shortcodes.">
+    <meta property="og:description" content="This is a brief guide to managing content with the Academic theme. Content can include homepage sections, publications, projects, and news/blog articles. After you have read this guide about creating and managing content, you may also be interested to learn about writing content with Markdown, LaTeX, and Shortcodes.">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="Managing content">
+    <meta property="og:url" content="/post/managing-content/">
+    <meta property="og:site_name" content="Academic Theme">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Academic Theme">
+    <meta name="twitter:description" content="This is a brief guide to managing content with the Academic theme. Content can include homepage sections, publications, projects, and news/blog articles. After you have read this guide about creating and managing content, you may also be interested to learn about writing content with Markdown, LaTeX, and Shortcodes.">
+    
+    
+
+    
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+    <link rel="stylesheet" href="/css/style-zfzvxnwixwz6qe7xv3xz1eyvlzc7cdfoxrgduk75zpqxib0hatbphiq9sddx.min.css" />
+    
+    
+    
+      
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="/">Academic Theme</a>
+  </div>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="">
+  <div class="sidebar-container">
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="#top">
+    
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="#publications">
+    
+      
+      <span class="sidebar-button-desc">Publications</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="#posts">
+    
+      
+      <span class="sidebar-button-desc">Posts</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="#projects">
+    
+      
+      <span class="sidebar-button-desc">Projects</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="#teaching">
+    
+      
+      <span class="sidebar-button-desc">Teaching</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="#contact">
+    
+      
+      <span class="sidebar-button-desc">Contact</span>
+    </a>
+  </li>
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+    </ul>
+    <ul class="sidebar-buttons">
+      
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior=""
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      Managing content
+    </h1>
+  
+  <div class="post-meta">
+  <time itemprop="datePublished" datetime="2016-04-20T11:00:00Z">
+    Apr 20, 2016
+  </time>
+  
+
+</div>
+
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <p>This is a brief guide to managing content with the Academic theme. Content can include homepage sections, publications, projects, and news/blog articles. After you have read this guide about creating and managing content, you may also be interested to learn about <a href="https://liam-wang.github.io/post/writing-markdown-latex/">writing content with Markdown, LaTeX, and Shortcodes</a>.</p>
+
+<p>To enable LaTeX math rendering for a page, you should include <code>math = true</code> in the page&rsquo;s <code>+++</code> preamble, as demonstrated in the included example site. Otherwise, to enable math on the homepage or for all pages, you must globally set <code>math = true</code> in <code>config.toml</code>.</p>
+
+<p>To display an image in publication, post, or project page headers, you can include the <code>image = &quot;my-image.jpg&quot;</code> option in the page <code>+++</code> preamble. It is automatically assumed that the image is located in your <code>static/img/</code> folder. In the context of posts and projects, the image is intended to behave as a full width banner across the top of the article.</p>
+
+<h2 id="homepage-widgets">Homepage widgets</h2>
+
+<p>The example site includes the following widgets which display as sections on the homepage:</p>
+
+<ul>
+<li>About/biography</li>
+<li>Selected publications</li>
+<li>Recent publications</li>
+<li>Recent news/blog posts</li>
+<li>Projects</li>
+<li>Example custom widget called <em>teaching</em></li>
+<li>Contact</li>
+</ul>
+
+<h3 id="add-a-section-to-the-homepage">Add a section to the homepage</h3>
+
+<p>You can use the custom widget to create your own home page sections.</p>
+
+<p>Simply duplicate (copy/paste) and rename the example <em>teaching</em> file at <code>content/home/teaching.md</code>. Then edit the section title, weight (refer to <em>Ordering sections</em> below), and content as desired.</p>
+
+<p>You may also wish to add a navigation link to the top of the page that points to the new section. This can be achieved by adding something similar to the following lines to your <code>config.toml</code>, where the URL will consist of the first title word in lowercase:</p>
+
+<pre><code>[[menu.main]]
+    name = &quot;Research&quot;
+    url = &quot;#research&quot;
+    weight = 10
+</code></pre>
+
+<h3 id="remove-a-section-from-the-homepage">Remove a section from the homepage</h3>
+
+<p>Note that homepage widgets for publications, projects and posts will automatically hide when there is no content of the respective type.</p>
+
+<p>Otherwise, if you do not require a particular widget, you can simply delete any associated files from the <code>content/home/</code> folder.</p>
+
+<p>To remove a navigation link from the top of the page, remove the associated <code>[[menu.main]]</code> entry in <code>config.toml</code>.</p>
+
+<h3 id="ordering-sections">Ordering sections</h3>
+
+<p>The order that the homepage sections are displayed in is defined by the <code>weight</code> parameter in each of the files in the <code>content/home/</code> directory. The sections are displayed in ascending order of their <code>weight</code>, so you can simply edit the <code>weight</code> parameters as desired.</p>
+
+<h2 id="create-a-publication">Create a publication</h2>
+
+<p>To create a new publication:</p>
+
+<pre><code>hugo new publication/my-paper-name.md
+</code></pre>
+
+<p>Then edit the default variables at the top of <code>content/publication/my-paper-name.md</code> to include the details of your publication. The <code>url_</code> variables are used to generate links associated with your publication, such as for viewing PDFs of papers. Here is an example:</p>
+
+<pre><code>+++
+abstract = &quot;An abstract...&quot;
+authors = [&quot;First author's name&quot;, &quot;Second author's name&quot;]
+date = &quot;2013-07-01&quot;
+image = &quot;&quot;
+image_preview = &quot;&quot;
+math = false
+publication = &quot;The publishing part of the citation goes here. You may use *Markdown* for italics etc.&quot;
+title = &quot;A publication title, such as title of a paper&quot;
+url_code = &quot;&quot;
+url_dataset = &quot;&quot;
+url_pdf = &quot;pdf/my-paper-name.pdf&quot;
+url_project = &quot;&quot;
+url_slides = &quot;&quot;
+url_video = &quot;&quot;
++++
+
+Further details on your publication can be written here using *Markdown* for formatting. This text will be displayed on the Publication Detail page.
+</code></pre>
+
+<p>The <code>url_</code> links can either point to local or web content. Associated local publication content, such as PDFs, may be copied to a <code>static/pdf/</code> folder and referenced like <code>url_pdf = &quot;pdf/my-paper-name.pdf&quot;</code>.</p>
+
+<p>You can also associate custom link buttons with the publication by adding the following block(s) within the variable preamble above, which is denoted by <code>+++</code>:</p>
+
+<pre><code>[[url_custom]]
+    name = &quot;Custom Link&quot;
+    url = &quot;http://www.example.org&quot;
+</code></pre>
+
+<p>If you enabled <code>detailed_list</code> for publications in <code>config.toml</code>, then there are a few more optional variables that you can include in the publication page preamble. You may use <code>abstract_short = &quot;friendly summary of abstract&quot;</code> and <code>publication_short = &quot;abbreviated publication details&quot;</code> to display a friendly summary of the abstract and abbreviate the publication details, respectively. Furthermore, there is the option to display a different image on the homepage to the publication detail page by setting <code>image_preview = &quot;my-image.jpg&quot;</code>. This can be useful if you wish to scale down the image for the homepage or simply if you just wish to show a different image for the preview.</p>
+
+<h2 id="post-an-article">Post an article</h2>
+
+<p>To create a blog/news article:</p>
+
+<pre><code>hugo new post/my-article-name.md
+</code></pre>
+
+<p>Then edit the newly created file <code>content/post/my-article-name.md</code> with your full title and content.</p>
+
+<p>Hugo will automatically generate summaries of posts that appear on the homepage. If you are dissatisfied with an automated summary, you can either limit the summary length by appropriately placing <code>&#60;&#33;&#45;&#45;more&#45;&#45;&#62;</code> in the article body, or completely override the automated summary by adding a <code>summary</code> parameter to the <code>+++</code> preamble such that:</p>
+
+<pre><code>summary = &quot;Summary of my post.&quot;
+</code></pre>
+
+<p>To disable commenting for a specific post, you can add <code>disable_comments = true</code> to the post <code>+++</code> preamble. Or to disable commenting for all posts, you can either set <code>disqusShortname = &quot;&quot;</code> or <code>disable_comments = true</code> in <code>config.toml</code>.</p>
+
+<h2 id="create-a-project">Create a project</h2>
+
+<p>To create a project:</p>
+
+<pre><code>hugo new project/my-project-name.md
+</code></pre>
+
+<p>Then edit the newly created file <code>content/project/my-project-name.md</code>. Either you can link the project to an external project website by setting the <code>external_link = &quot;http://external-project.com&quot;</code> variable at the top of the file, or you can add content (below the final <code>+++</code>) in order to render a project page on your website.</p>
+
+<h2 id="removing-content">Removing content</h2>
+
+<p>Generally, to remove content, simply delete the relevant file from your <code>content/post</code>, <code>content/publication</code>, <code>content/project</code>, or <code>content/home</code> folder.</p>
+
+<h2 id="view-your-updated-site">View your updated site</h2>
+
+<p>After you have made changes to your site, you can view it by running the <code>hugo server --watch</code> command and then opening <a href="http://localhost:1313">localhost:1313</a> in your web browser.</p>
+
+<h2 id="deploy-your-site">Deploy your site</h2>
+
+<p>Finally, you can build the static website to a <code>public/</code> folder ready for deployment using the <code>hugo</code> command.</p>
+
+<p>You may then deploy your site by copying the <code>public/</code> directory (by FTP, SFTP, WebDAV, Rsync, git push, etc.) to your production web server.</p>
+
+<p>Note that running <code>hugo</code> does not remove any previously generated files before building. Therefore, it&rsquo;s best practice to delete your <code>public/</code> directory prior to running <code>hugo</code> to ensure no old or interim files are deployed to your server.</p>
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+              
+                <div class="post-footer-tags">
+                  <span class="text-color-light text-small">TAGGED IN</span><br/>
+                  
+  <a class="tag tag--primary tag--small" href="https://liam-wang.github.io//tags/academic/">academic</a>
+
+  <a class="tag tag--primary tag--small" href="https://liam-wang.github.io//tags/hugo/">hugo</a>
+
+                </div>
+              
+            
+            <div class="post-actions-wrap">
+  <nav>
+    <ul class="post-actions post-action-nav">
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default tooltip--top" href="/post/getting-started/" data-tooltip="Getting started with the Academic theme for Hugo">
+        
+          <i class="fa fa-angle-left"></i>
+          <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+        </a>
+      </li>
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default tooltip--top" href="/post/writing-markdown-latex/" data-tooltip="Writing content with Markdown, LaTeX, and Shortcodes">
+        
+          <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+          <i class="fa fa-angle-right"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <ul class="post-actions post-action-share">
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+        <i class="fa fa-share-alt"></i>
+      </a>
+    </li>
+    <li class="post-action hide-xs">
+      <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https%3a%2f%2fliam-wang.github.io%2fpost%2fmanaging-content%2f">
+        <i class="fa fa-google-plus"></i>
+      </a>
+    </li>
+    <li class="post-action hide-xs">
+      <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fliam-wang.github.io%2fpost%2fmanaging-content%2f">
+        <i class="fa fa-facebook-official"></i>
+      </a>
+    </li>
+    <li class="post-action hide-xs">
+      <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fliam-wang.github.io%2fpost%2fmanaging-content%2f">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    
+    <li class="post-action">
+      
+        <a class="post-action-btn btn btn--default" href="#">
+      
+        <i class="fa fa-list"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+            
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    Copyrights &copy; 2016 Academic Theme. All Rights Reserved.
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="">
+        <div class="post-actions-wrap">
+  <nav>
+    <ul class="post-actions post-action-nav">
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default tooltip--top" href="/post/getting-started/" data-tooltip="Getting started with the Academic theme for Hugo">
+        
+          <i class="fa fa-angle-left"></i>
+          <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+        </a>
+      </li>
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default tooltip--top" href="/post/writing-markdown-latex/" data-tooltip="Writing content with Markdown, LaTeX, and Shortcodes">
+        
+          <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+          <i class="fa fa-angle-right"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <ul class="post-actions post-action-share">
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+        <i class="fa fa-share-alt"></i>
+      </a>
+    </li>
+    <li class="post-action hide-xs">
+      <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https%3a%2f%2fliam-wang.github.io%2fpost%2fmanaging-content%2f">
+        <i class="fa fa-google-plus"></i>
+      </a>
+    </li>
+    <li class="post-action hide-xs">
+      <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fliam-wang.github.io%2fpost%2fmanaging-content%2f">
+        <i class="fa fa-facebook-official"></i>
+      </a>
+    </li>
+    <li class="post-action hide-xs">
+      <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fliam-wang.github.io%2fpost%2fmanaging-content%2f">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    
+    <li class="post-action">
+      
+        <a class="post-action-btn btn btn--default" href="#">
+      
+        <i class="fa fa-list"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="">
+  <ul class="share-options">
+    <li class="share-option">
+      <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3a%2f%2fliam-wang.github.io%2fpost%2fmanaging-content%2f">
+        <i class="fa fa-google-plus"></i><span>Share on Google Plus</span>
+      </a>
+    </li>
+    <li class="share-option">
+      <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fliam-wang.github.io%2fpost%2fmanaging-content%2f">
+        <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
+      </a>
+    </li>
+    <li class="share-option">
+      <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fliam-wang.github.io%2fpost%2fmanaging-content%2f">
+        <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+      </a>
+    </li>
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+    <h4 id="about-card-name"></h4>
+    
+    
+    
+  </div>
+</div>
+
+    <div id="algolia-search-modal" class="modal-container">
+  <div class="modal">
+    <div class="modal-header">
+      <span class="close-button"><i class="fa fa-close"></i></span>
+      <a href="https://algolia.com" target="_blank" class="searchby-algolia text-color-light link-unstyled">
+        <span class="searchby-algolia-text text-color-light text-small">by</span>
+        <img class="searchby-algolia-logo" src="https://www.algolia.com/static_assets/images/press/downloads/algolia-light.svg">
+      </a>
+      <i class="search-icon fa fa-search"></i>
+      <form id="algolia-search-form">
+        <input type="text" id="algolia-search-input" name="search"
+          class="form-control input--large search-input" placeholder="Search "
+          autofocus="autofocus"/>
+      </form>
+    </div>
+    <div class="modal-body">
+      <div class="no-result text-color-light text-center">no post found</div>
+      <div class="results">
+        
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://liam-wang.github.io/post/getting-started/">
+                <h3 class="media-heading">Getting started with the Academic theme for Hugo</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Apr 4, 2016
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">The Academic theme enables you to easily create a beautifully simple academic or personal website using the Hugo static site generator.
+Key features:
+ Designed for personal and academic staff/student use Customizable Biography, Publications, Projects, News/Blog, Teaching, and Contact widgets Write in Markdown for easy formatting and code highlighting, with LaTeX for mathematical expressions Academic linking (Scholar etc.), Google Analytics, and Disqus comments Responsive and mobile friendly Simple and refreshing one page design  Installation  Install Hugo and create a new website by typing the following commands in your Terminal or Command Prompt app:</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://liam-wang.github.io/post/managing-content/">
+                <h3 class="media-heading">Managing content</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Apr 4, 2016
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><p>This is a brief guide to managing content with the Academic theme. Content can include homepage sections, publications, projects, and news/blog articles. After you have read this guide about creating and managing content, you may also be interested to learn about <a href="https://liam-wang.github.io/post/writing-markdown-latex/">writing content with Markdown, LaTeX, and Shortcodes</a>.</p></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://liam-wang.github.io/post/writing-markdown-latex/">
+                <h3 class="media-heading">Writing content with Markdown, LaTeX, and Shortcodes</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Apr 4, 2016
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><p>Content can be written using <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown</a>, <a href="https://en.wikibooks.org/wiki/LaTeX/Mathematics">LaTeX math</a>, and <a href="http://gohugo.io/extras/shortcodes/">Hugo Shortcodes</a>. Additionally, HTML may be used for advanced formatting. This article gives an overview of the most common formatting options.</p></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://liam-wang.github.io/post/migrate-from-jekyll/">
+                <h3 class="media-heading">Migrate from Jekyll to Hugo</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Mar 3, 2014
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">Here are a few tips for migrating an existing website from Jekyll to Hugo. These tips can be applied in conjunction with following Hugo Academic&rsquo;s getting started guide.
+Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+      </div>
+    </div>
+    <div class="modal-footer">
+      <p class="results-count text-medium"
+         data-message-zero="no post found"
+         data-message-one="1 post found"
+         data-message-other="{n} posts found">
+         4 posts found
+      </p>
+    </div>
+  </div>
+</div>
+    
+
+    
+<script src="/js/script-lrchyhb5kddxeiejst2qhr1sqb7vhfxkdhrigadzb4moxbk6your91edbeqz.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight').each(function(i, block) {
+    var code = "";
+    hljs.highlightAuto(block.innerText).value.split(/\r\n|\r|\n/).forEach(function(line) {
+      code += "<span class=\"line\">" + line + "</span><br>";
+    });
+    if (code.length > 0) {
+      block.innerHTML = code;  
+    }
+  });
+  $('pre > code').each(function(i, block) {
+    $(this).addClass('codeblock');
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+  
+    
+  
+
+
+  </body>
+</html>
