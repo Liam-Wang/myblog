@@ -14,9 +14,9 @@
 
 baseurl = "https://liam-wang.github.io/"
 languageCode = "en-us"
-title = "Hugo tranquilpeak theme"
-theme = "hugo-tranquilpeak-theme"
-DisqusShortname = "hugo-tranquilpeak-theme"
+title = "tranquilpeak"
+theme = "tranquilpeak"
+DisqusShortname = "tranquilpeak"
 # googleAnalytics = "UA-123-45"
 Paginate = 7
 canonifyurls = true
