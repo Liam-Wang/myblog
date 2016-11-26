@@ -12,11 +12,11 @@
 # For developpers, if you modify this theme, put your images in `source/images` folder and
 # use grunt task `build` to synchronize assets
 
-baseurl = "https://liam-wang.github.io/"
+baseurl = "http://liamwang.net"
 languageCode = "en-us"
-title = "tranquilpeak"
+title = "Liam's Blog"
 theme = "tranquilpeak"
-DisqusShortname = "tranquilpeak"
+DisqusShortname = "Liam's Blog"
 # googleAnalytics = "UA-123-45"
 Paginate = 7
 canonifyurls = true
@@ -28,17 +28,22 @@ canonifyurls = true
   tag = "tags"
   category = "categories"
   archive = "archives"
+  
+[params.header.right_link]
+  class = "open-algolia-search"
+  icon = "code"
+  url = "http://liamwang.net/img/me.ico"
 
 [author]
   name = "Liam Wang"
-  bio = "Super bio with markdown support **COOL**"
-  job = "Software Engineer"
-  location = "France"
+  bio = "A Programmer, A Bloger and A Gopher. Interesting in Software design and programming, real-time cache system design."
+  job = "Software Engineer in Derbysoft Ltd."
+  location = "Shanghai China"
   # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
-  gravatar_email = "thibaud.lepretre@gmail.com"
+  gravatar_email = ""
   # Your profile picture
   # Overwritten by your gravatar image if `author.gravatar` is filled
-  picture = "https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png"
+  picture = "http://liamwang.net/img/me.jpg"
   # Your Twitter username without the @. E.g : thibaudlepretre
   # twitter = "thibaudlepretre"
   # Your google plus profile id. E.g : +ThibaudLepretre or 114625208755123718311
@@ -81,13 +86,7 @@ canonifyurls = true
   identifier = "github"
   name = "GitHub"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-github\"></i>"
-  url = "https://github.com/kakawait"
-[[menu.links]]
-  weight = 1
-  identifier = "stackoverflow"
-  name = "Stack Overflow"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-stack-overflow\"></i>"
-  url = "https://stackoverflow.com/users/636472/kakawait"
+  url = "https://github.com/liam-wang"
 
 [[menu.misc]]
   weight = 0
@@ -105,7 +104,7 @@ canonifyurls = true
 
   hierarchical_categories = true
 
-  description = "Hugo tranquilpeak theme demo"
+  description = "This is Liam's Blog"
 
   # Customization
   # Define the behavior of the sidebar
@@ -151,7 +150,3 @@ canonifyurls = true
   #     url: /#search
   #     icon: search
   #     class: st-search-show-outputs
-  [params.header.right_link]
-    class = ""
-    icon = ""
-    url = "/#about"
